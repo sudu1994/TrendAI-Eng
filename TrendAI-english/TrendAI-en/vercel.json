@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "name": "trendbase-ai-en",
   "builds": [
     {
-      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js",
+      "src": "**/api/analyze.js",
       "use": "@vercel/node"
     },
     {
-      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html",
+      "src": "**/index.html",
       "use": "@vercel/static"
     }
   ],
