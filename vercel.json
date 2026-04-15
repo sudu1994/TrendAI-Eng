@@ -1,23 +1,13 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js",
-      "use": "@vercel/node"
+      "source": "/api/(.*)",
+      "destination": "/TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js"
     },
     {
-      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html"
+      "source": "/(.*)",
+      "destination": "/TrendAI-Eng/TrendAI-english/TrendAI-en/index.html"
     }
   ]
 }
