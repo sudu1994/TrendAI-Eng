@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html"
+    }
+  ]
+}
