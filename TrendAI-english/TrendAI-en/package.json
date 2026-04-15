@@ -1,9 +1,9 @@
 {
-  "name": "trendbaseai",
+  "name": "trendbase-ai-api",
   "version": "1.0.0",
-  "description": "TrendBaseAI - Google Trends × AI Business Plan Generator",
+  "main": "api/analyze.js",
   "dependencies": {
-    "@google/generative-ai": "^0.11.0",
-    "axios": "^1.7.0"
+    "@google/generative-ai": "^0.x.x",
+    "axios": "^1.x.x"
   }
 }
