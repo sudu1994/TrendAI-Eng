@@ -1,24 +1,24 @@
 {
   "version": 2,
-  "name": "trendbase-ai",
+  "name": "trendbase-ai-en",
   "builds": [
     {
-      "src": "api/analyze.js",
+      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js",
       "use": "@vercel/node"
     },
     {
-      "src": "index.html",
+      "src": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api/analyze.js"
+      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/api/analyze.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "TrendAI-Eng/TrendAI-english/TrendAI-en/index.html"
     }
   ]
 }
