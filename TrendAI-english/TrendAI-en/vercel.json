@@ -1,8 +1,9 @@
 {
   "version": 2,
+  "name": "trendbase-ai",
   "builds": [
     {
-      "src": "api/*.js",
+      "src": "api/analyze.js",
       "use": "@vercel/node"
     },
     {
@@ -16,8 +17,8 @@
       "dest": "api/analyze.js"
     },
     {
-      "src": "/",
-      "dest": "index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
